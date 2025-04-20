@@ -1,15 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import ProviderWrapper from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const anuphanLight = localFont({
+  src: './fonts/Anuphan-Light.ttf',
+  variable: '--font-anuphan-light',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const anuphanSemiBold = localFont({
+  src: './fonts/Anuphan-SemiBold.ttf',
+  variable: '--font-anuphan-semibold',
+  display: 'swap',
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${anuphanLight.variable} ${anuphanSemiBold.variable}`}>
         <ProviderWrapper>{children}</ProviderWrapper>
       </body>
     </html>

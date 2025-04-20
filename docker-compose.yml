@@ -8,7 +8,6 @@ services:
         - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
     environment:
       - NEXT_PUBLIC_API_URL
-      - NEXT_PUBLIC_SOCKET_URL
     expose:
       - "3003"
     container_name: survey-app
