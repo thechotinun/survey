@@ -21,7 +21,7 @@ export default async function SurveyApp({ params }) {
 
   return (
     <>
-      <Home dataSeq={seq} dataQuestion={question} />
+      <Home dataSeq={seq} dataQuestions={question} />
     </>
   );
 }

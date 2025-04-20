@@ -4,9 +4,9 @@ import { NextResponse } from "next/server";
 // FIND (GET) function
 export async function GET(req, { params }) {
     try {
-      const { id } = params;
+      const { id } = await params;
   
-      const response = await axiosInstance.get(`/questions/${id}`);
+      const response = await axiosInstance.get(`/sequences/${id}`);
       return NextResponse.json(response.data, {
         status: response.data.status.code,
       });
