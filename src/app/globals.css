@@ -21,13 +21,13 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-anuphan-light);
+  font-family: var(--font-anuphan-light) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 strong, h1, h2, h3, h4, h5, h6, .semibold {
-  font-family: var(--font-anuphan-semibold);
+  font-family: var(--font-anuphan-semibold) !important;
 }
 
 * {
@@ -45,4 +45,12 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.anuphan-semibold {
+  font-family: var(--font-anuphan-semibold) !important;
+}
+
+.anuphan-light {
+  font-family: var(--font-anuphan-light) !important;
 }
